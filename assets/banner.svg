@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0E1A"/>
+      <stop offset="50%" style="stop-color:#0F1629"/>
+      <stop offset="100%" style="stop-color:#0A0E1A"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="100%" style="stop-color:#7B61FF"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="100%" style="stop-color:#0090B0"/>
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="bannerClip"><rect x="0" y="0" width="1200" height="400" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#bannerClip)">
+    <rect width="1200" height="400" fill="url(#bgGrad)"/>
+    <g opacity="0.04" stroke="#00D4FF" stroke-width="0.5" fill="none">
+      <line x1="0" y1="50" x2="1200" y2="50"/><line x1="0" y1="100" x2="1200" y2="100"/>
+      <line x1="0" y1="150" x2="1200" y2="150"/><line x1="0" y1="200" x2="1200" y2="200"/>
+      <line x1="0" y1="250" x2="1200" y2="250"/><line x1="0" y1="300" x2="1200" y2="300"/>
+      <line x1="0" y1="350" x2="1200" y2="350"/>
+      <line x1="100" y1="0" x2="100" y2="400"/><line x1="200" y1="0" x2="200" y2="400"/>
+      <line x1="300" y1="0" x2="300" y2="400"/><line x1="400" y1="0" x2="400" y2="400"/>
+      <line x1="500" y1="0" x2="500" y2="400"/><line x1="600" y1="0" x2="600" y2="400"/>
+      <line x1="700" y1="0" x2="700" y2="400"/><line x1="800" y1="0" x2="800" y2="400"/>
+      <line x1="900" y1="0" x2="900" y2="400"/><line x1="1000" y1="0" x2="1000" y2="400"/>
+      <line x1="1100" y1="0" x2="1100" y2="400"/>
+    </g>
+    <circle cx="180" cy="200" r="180" fill="#00D4FF" opacity="0.03"/>
+    <circle cx="1020" cy="200" r="160" fill="#7B61FF" opacity="0.03"/>
+    <g stroke="#00D4FF" stroke-width="1" fill="none" opacity="0.12">
+      <path d="M0,120 L60,120 L80,140 L130,140"/><circle cx="130" cy="140" r="3" fill="#00D4FF"/>
+      <path d="M0,160 L40,160 L60,180 L110,180"/><circle cx="110" cy="180" r="2.5" fill="#00D4FF"/>
+      <path d="M0,240 L50,240 L70,220 L120,220"/><circle cx="120" cy="220" r="3" fill="#00D4FF"/>
+      <path d="M0,280 L30,280 L50,260 L100,260"/><circle cx="100" cy="260" r="2.5" fill="#00D4FF"/>
+    </g>
+    <g stroke="#7B61FF" stroke-width="1" fill="none" opacity="0.12">
+      <path d="M1200,130 L1140,130 L1120,150 L1070,150"/><circle cx="1070" cy="150" r="3" fill="#7B61FF"/>
+      <path d="M1200,170 L1160,170 L1140,190 L1090,190"/><circle cx="1090" cy="190" r="2.5" fill="#7B61FF"/>
+      <path d="M1200,230 L1150,230 L1130,210 L1080,210"/><circle cx="1080" cy="210" r="3" fill="#7B61FF"/>
+      <path d="M1200,270 L1170,270 L1150,250 L1100,250"/><circle cx="1100" cy="250" r="2.5" fill="#7B61FF"/>
+    </g>
+    <!-- AD Shield Icon -->
+    <g transform="translate(170, 128)" filter="url(#softGlow)">
+      <path d="M60,8 C60,8 100,0 100,0 C100,0 140,8 140,8 C142,8.5 144,10.5 144,12.5 L144,70 C144,90 120,115 100,130 C80,115 56,90 56,70 L56,12.5 C56,10.5 58,8.5 60,8 Z" fill="none" stroke="url(#shieldGrad)" stroke-width="2.5" opacity="0.9"/>
+      <path d="M68,20 C68,20 100,13 100,13 C100,13 132,20 132,20 C133,20.4 134,21.5 134,22.5 L134,68 C134,84 115,104 100,116 C85,104 66,84 66,68 L66,22.5 C66,21.5 67,20.4 68,20 Z" fill="rgba(0,212,255,0.05)" stroke="url(#shieldGrad)" stroke-width="0.5" opacity="0.5"/>
+      <text x="100" y="62" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="22" font-weight="800" fill="#00D4FF" letter-spacing="2" opacity="0.9">AD</text>
+      <path d="M85,80 L95,92 L118,68" fill="none" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+    </g>
+    <text x="380" y="165" font-family="'Inter','Segoe UI',sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">Active Directory</text>
+    <text x="380" y="218" font-family="'Inter','Segoe UI',sans-serif" font-size="42" font-weight="800" fill="url(#accentGrad)" letter-spacing="-0.5">Security Assessment</text>
+    <text x="382" y="255" font-family="'Inter','Segoe UI',sans-serif" font-size="15" fill="#8B92A5" letter-spacing="0.3">Open-source AD security scanner — LDAP/LDAPS + WinRM, 165+ checks, 15 categories</text>
+    <g transform="translate(380, 275)">
+      <rect x="0" y="0" width="112" height="32" rx="6" fill="#00D4FF" fill-opacity="0.08" stroke="#00D4FF" stroke-opacity="0.25" stroke-width="1"/>
+      <text x="56" y="21" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#00D4FF">165+ Checks</text>
+      <rect x="124" y="0" width="120" height="32" rx="6" fill="#7B61FF" fill-opacity="0.08" stroke="#7B61FF" stroke-opacity="0.25" stroke-width="1"/>
+      <text x="184" y="21" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#7B61FF">15 Categories</text>
+      <rect x="256" y="0" width="108" height="32" rx="6" fill="#00D4FF" fill-opacity="0.08" stroke="#00D4FF" stroke-opacity="0.25" stroke-width="1"/>
+      <text x="310" y="21" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#00D4FF">LDAP + WinRM</text>
+      <rect x="376" y="0" width="84" height="32" rx="6" fill="#7B61FF" fill-opacity="0.08" stroke="#7B61FF" stroke-opacity="0.25" stroke-width="1"/>
+      <text x="418" y="21" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="12" font-weight="600" fill="#7B61FF">Python</text>
+    </g>
+    <rect x="0" y="394" width="1200" height="6" fill="url(#accentGrad)" opacity="0.8"/>
+    <rect x="0" y="0" width="1200" height="1" fill="url(#accentGrad)" opacity="0.3"/>
+    <path d="M0,0 L40,0 L40,2 L2,2 L2,40 L0,40 Z" fill="#00D4FF" opacity="0.15"/>
+    <path d="M1200,0 L1160,0 L1160,2 L1198,2 L1198,40 L1200,40 Z" fill="#7B61FF" opacity="0.15"/>
+    <path d="M0,400 L40,400 L40,398 L2,398 L2,360 L0,360 Z" fill="#00D4FF" opacity="0.15"/>
+    <path d="M1200,400 L1160,400 L1160,398 L1198,398 L1198,360 L1200,360 Z" fill="#7B61FF" opacity="0.15"/>
+    <text x="1170" y="385" text-anchor="end" font-family="'Inter','Segoe UI',sans-serif" font-size="11" fill="#5A6072" letter-spacing="0.5">PHALANX CYBER</text>
+  </g>
+</svg>

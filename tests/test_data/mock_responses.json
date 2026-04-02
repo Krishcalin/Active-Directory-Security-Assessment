@@ -1,0 +1,56 @@
+{
+  "domain_info": {
+    "dn": "DC=corp,DC=com",
+    "msds-behavior-version": "4",
+    "minpwdlength": "7",
+    "maxpwdage": "-36288000000000",
+    "minpwdage": "0",
+    "lockoutthreshold": "0",
+    "pwdhistorylength": "10",
+    "pwdproperties": "0",
+    "ms-ds-machineaccountquota": "10",
+    "tombstonelifetime": "60"
+  },
+  "domain_controllers": [
+    {"cn": "DC01", "dnshostname": "dc01.corp.com", "operatingsystem": "Windows Server 2012 R2", "lastlogontimestamp": "133500000000000000"},
+    {"cn": "DC02", "dnshostname": "dc02.corp.com", "operatingsystem": "Windows Server 2022", "lastlogontimestamp": "133550000000000000"}
+  ],
+  "users": [
+    {"samaccountname": "admin", "useraccountcontrol": "512", "admincount": "1", "serviceprincipalname": ["MSSQLSvc/db01.corp.com:1433"], "pwdlastset": "132000000000000000", "memberof": ["CN=Domain Admins,CN=Users,DC=corp,DC=com"]},
+    {"samaccountname": "svc_backup", "useraccountcontrol": "66048", "serviceprincipalname": ["HTTP/backup.corp.com"], "pwdlastset": "131000000000000000", "admincount": "0"},
+    {"samaccountname": "jdoe", "useraccountcontrol": "4194816", "pwdlastset": "133400000000000000", "admincount": "0"},
+    {"samaccountname": "testuser", "useraccountcontrol": "544", "pwdlastset": "133500000000000000", "admincount": "0"},
+    {"samaccountname": "old_svc", "useraccountcontrol": "66048", "serviceprincipalname": ["CIFS/fileserver.corp.com"], "pwdlastset": "130000000000000000", "admincount": "0"},
+    {"samaccountname": "krbtgt", "useraccountcontrol": "514", "pwdlastset": "131500000000000000"}
+  ],
+  "domain_admins": [
+    {"samaccountname": "admin", "useraccountcontrol": "512", "lastlogontimestamp": "133550000000000000", "pwdlastset": "132000000000000000"},
+    {"samaccountname": "da_stale", "useraccountcontrol": "512", "lastlogontimestamp": "132000000000000000", "pwdlastset": "132000000000000000"}
+  ],
+  "enterprise_admins": [
+    {"samaccountname": "admin", "useraccountcontrol": "512"}
+  ],
+  "schema_admins": [],
+  "protected_users": [],
+  "backup_operators": [
+    {"samaccountname": "backup_user"}
+  ],
+  "gpos": [
+    {"displayname": "Default Domain Policy", "flags": "0", "cn": "{31B2F340-016D-11D2-945F-00C04FB984F9}"},
+    {"displayname": "Old Test GPO", "flags": "3", "cn": "{12345678-1234-1234-1234-123456789012}"}
+  ],
+  "trusts": [
+    {"cn": "partner.com", "trustdirection": "3", "trusttype": "2", "trustattributes": "0", "trustpartner": "partner.com"}
+  ],
+  "certificate_templates": [
+    {"cn": "VulnTemplate", "mspki-certificate-name-flag": "1", "pkiextendedkeyusage": ["1.3.6.1.5.5.7.3.2"], "mspki-ra-signature": "0", "mspki-enrollment-flag": "0"}
+  ],
+  "enrollment_services": [
+    {"cn": "Corp-CA", "dnshostname": "ca01.corp.com"}
+  ],
+  "fgpp": [],
+  "service_accounts": [],
+  "unconstrained_delegation": [
+    {"samaccountname": "SERVER01$", "useraccountcontrol": "528384", "dnshostname": "server01.corp.com"}
+  ]
+}

@@ -1,0 +1,28 @@
+# Active Directory Security Scanner — Default Scan Profile
+# Enable/disable check categories
+
+scan_profile:
+  name: "Full AD Security Assessment"
+  description: "All check categories enabled"
+
+checks:
+  domain_config: true
+  kerberos_security: true
+  password_policy: true
+  privileged_accounts: true
+  group_policy: true
+  ldap_security: true
+  dns_security: true
+  trust_relationships: true
+  certificate_services: true
+  replication_security: true
+  object_permissions: true
+  service_accounts: true
+  authentication_security: true
+  lateral_movement: true
+  audit_logging: true
+
+settings:
+  timeout: 30
+  use_winrm: true
+  verbose: false
